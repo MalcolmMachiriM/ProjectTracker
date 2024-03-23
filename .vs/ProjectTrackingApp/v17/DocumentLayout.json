@@ -1,0 +1,269 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|c:\\systems\\projecttrackingapp\\projecttrackingapp\\projecttrackingapp\\pm\\view-projects-pm.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|solutionrelative:projecttrackingapp\\pm\\view-projects-pm.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|c:\\systems\\projecttrackingapp\\projecttrackingapp\\projecttrackingapp\\pm\\view-projects-pm.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|solutionrelative:projecttrackingapp\\pm\\view-projects-pm.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\projecttrackingapp\\projectmain.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|solutionrelative:projecttrackingapp\\projectmain.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|c:\\systems\\projecttrackingapp\\projecttrackingapp\\projecttrackingapp\\membersview.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|solutionrelative:projecttrackingapp\\membersview.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|c:\\systems\\projecttrackingapp\\projecttrackingapp\\projecttrackingapp\\pm\\projects-enquiries.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|solutionrelative:projecttrackingapp\\pm\\projects-enquiries.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|c:\\systems\\projecttrackingapp\\projecttrackingapp\\projecttrackingapp\\classes\\evaluatedrisks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|solutionrelative:projecttrackingapp\\classes\\evaluatedrisks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\projecttrackingapp\\classes\\risks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|solutionrelative:projecttrackingapp\\classes\\risks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|c:\\systems\\projecttrackingapp\\projecttrackingapp\\projecttrackingapp\\admin\\assign-memnbers.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|solutionrelative:projecttrackingapp\\admin\\assign-memnbers.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\projecttrackingapp\\admin\\assign-memnbers.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|solutionrelative:projecttrackingapp\\admin\\assign-memnbers.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\projecttrackingapp\\riskmanagement\\riskmodelling.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|solutionrelative:projecttrackingapp\\riskmanagement\\riskmodelling.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\projecttrackingapp\\admin\\create-project-category.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|solutionrelative:projecttrackingapp\\admin\\create-project-category.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\projecttrackingapp\\projectdashboard.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|solutionrelative:projecttrackingapp\\projectdashboard.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\projecttrackingapp\\classes\\projectcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|solutionrelative:projecttrackingapp\\classes\\projectcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\projecttrackingapp\\riskmanagement\\riskmodelling.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|solutionrelative:projecttrackingapp\\riskmanagement\\riskmodelling.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\projecttrackingapp\\classes\\projecttask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{265B0698-3EBD-45D1-855F-BE46216C28B6}|ProjectTrackingApp\\ProjectTrackingApp.csproj|solutionrelative:projecttrackingapp\\classes\\projecttask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MembersView.Master",
+              "DocumentMoniker": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\MembersView.Master",
+              "RelativeDocumentMoniker": "ProjectTrackingApp\\MembersView.Master",
+              "ToolTip": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\MembersView.Master",
+              "RelativeToolTip": "ProjectTrackingApp\\MembersView.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-21T19:35:11.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EvaluatedRisks.cs",
+              "DocumentMoniker": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\Classes\\EvaluatedRisks.cs",
+              "RelativeDocumentMoniker": "ProjectTrackingApp\\Classes\\EvaluatedRisks.cs",
+              "ToolTip": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\Classes\\EvaluatedRisks.cs",
+              "RelativeToolTip": "ProjectTrackingApp\\Classes\\EvaluatedRisks.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAQwAkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T19:05:34.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "projects-enquiries.aspx.cs",
+              "DocumentMoniker": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\PM\\projects-enquiries.aspx.cs",
+              "RelativeDocumentMoniker": "ProjectTrackingApp\\PM\\projects-enquiries.aspx.cs",
+              "ToolTip": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\PM\\projects-enquiries.aspx.cs",
+              "RelativeToolTip": "ProjectTrackingApp\\PM\\projects-enquiries.aspx.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAkwEwAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T17:20:39.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "view-projects-pm.aspx.cs",
+              "DocumentMoniker": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\PM\\view-projects-pm.aspx.cs",
+              "RelativeDocumentMoniker": "ProjectTrackingApp\\PM\\view-projects-pm.aspx.cs",
+              "ToolTip": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\PM\\view-projects-pm.aspx.cs",
+              "RelativeToolTip": "ProjectTrackingApp\\PM\\view-projects-pm.aspx.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwCgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T17:11:38.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProjectMain.Master",
+              "DocumentMoniker": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectMain.Master",
+              "RelativeDocumentMoniker": "ProjectTrackingApp\\ProjectMain.Master",
+              "ToolTip": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectMain.Master",
+              "RelativeToolTip": "ProjectTrackingApp\\ProjectMain.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-21T16:06:14.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Risks.cs",
+              "DocumentMoniker": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\Classes\\Risks.cs",
+              "RelativeDocumentMoniker": "ProjectTrackingApp\\Classes\\Risks.cs",
+              "ToolTip": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\Classes\\Risks.cs",
+              "RelativeToolTip": "ProjectTrackingApp\\Classes\\Risks.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAewAsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T11:27:00.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "view-projects-pm.aspx",
+              "DocumentMoniker": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\PM\\view-projects-pm.aspx",
+              "RelativeDocumentMoniker": "ProjectTrackingApp\\PM\\view-projects-pm.aspx",
+              "ToolTip": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\PM\\view-projects-pm.aspx",
+              "RelativeToolTip": "ProjectTrackingApp\\PM\\view-projects-pm.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-20T13:47:12.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "assign-memnbers.aspx.cs",
+              "DocumentMoniker": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\Admin\\assign-memnbers.aspx.cs",
+              "RelativeDocumentMoniker": "ProjectTrackingApp\\Admin\\assign-memnbers.aspx.cs",
+              "ToolTip": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\Admin\\assign-memnbers.aspx.cs",
+              "RelativeToolTip": "ProjectTrackingApp\\Admin\\assign-memnbers.aspx.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCEAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T17:16:28.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProjectCategory.cs",
+              "DocumentMoniker": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\Classes\\ProjectCategory.cs",
+              "RelativeDocumentMoniker": "ProjectTrackingApp\\Classes\\ProjectCategory.cs",
+              "ToolTip": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\Classes\\ProjectCategory.cs",
+              "RelativeToolTip": "ProjectTrackingApp\\Classes\\ProjectCategory.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAwwGEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T10:43:22.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RiskModelling.aspx",
+              "DocumentMoniker": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\RiskManagement\\RiskModelling.aspx",
+              "RelativeDocumentMoniker": "ProjectTrackingApp\\RiskManagement\\RiskModelling.aspx",
+              "ToolTip": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\RiskManagement\\RiskModelling.aspx",
+              "RelativeToolTip": "ProjectTrackingApp\\RiskManagement\\RiskModelling.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-21T11:08:30.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "assign-memnbers.aspx",
+              "DocumentMoniker": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\Admin\\assign-memnbers.aspx",
+              "RelativeDocumentMoniker": "ProjectTrackingApp\\Admin\\assign-memnbers.aspx",
+              "ToolTip": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\Admin\\assign-memnbers.aspx",
+              "RelativeToolTip": "ProjectTrackingApp\\Admin\\assign-memnbers.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-21T06:52:21.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RiskModelling.aspx.cs",
+              "DocumentMoniker": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\RiskManagement\\RiskModelling.aspx.cs",
+              "RelativeDocumentMoniker": "ProjectTrackingApp\\RiskManagement\\RiskModelling.aspx.cs",
+              "ToolTip": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\RiskManagement\\RiskModelling.aspx.cs",
+              "RelativeToolTip": "ProjectTrackingApp\\RiskManagement\\RiskModelling.aspx.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAgwDkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T11:13:07.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProjectDashboard.Master",
+              "DocumentMoniker": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectDashboard.Master",
+              "RelativeDocumentMoniker": "ProjectTrackingApp\\ProjectDashboard.Master",
+              "ToolTip": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectDashboard.Master",
+              "RelativeToolTip": "ProjectTrackingApp\\ProjectDashboard.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-21T12:40:28.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProjectTask.cs",
+              "DocumentMoniker": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\Classes\\ProjectTask.cs",
+              "RelativeDocumentMoniker": "ProjectTrackingApp\\Classes\\ProjectTask.cs",
+              "ToolTip": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\Classes\\ProjectTask.cs",
+              "RelativeToolTip": "ProjectTrackingApp\\Classes\\ProjectTask.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAGAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T11:19:26.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "create-project-category.aspx",
+              "DocumentMoniker": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\Admin\\create-project-category.aspx",
+              "RelativeDocumentMoniker": "ProjectTrackingApp\\Admin\\create-project-category.aspx",
+              "ToolTip": "C:\\systems\\ProjectTrackingApp\\ProjectTrackingApp\\ProjectTrackingApp\\Admin\\create-project-category.aspx",
+              "RelativeToolTip": "ProjectTrackingApp\\Admin\\create-project-category.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-21T10:42:01.131Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
