@@ -214,12 +214,12 @@
               </li>
        
                  
-              <li>
+              <%--<li>
                 <a href="fontawesome.html">
                   <i class="fa fa-bullhorn"></i>
                   <span>Clients </span>
                 </a>
-              </li>
+              </li>--%>
              
               <li class="sub-menu">
                 <a href="javascript:;">
@@ -229,11 +229,10 @@
                 <ul class="sub">
                   <li><a href="../Admin/create-task">Create Task</a></li>
                   <li><a href="../Admin/view-tasks">View Tasks</a></li>
-                    <li><a href="advanced_form.html">Daily Activity Log</a></li>
          
                 </ul>
               </li>
-                <li class="sub-menu">
+              <%--  <li class="sub-menu">
   <a href="javascript:;">
     <i class="fa fa-tasks"></i>
     <span>Resource Management</span>
@@ -243,7 +242,7 @@
     <li><a href="advanced_form.html">Inventory Management Form</a></li>
          
   </ul>
-</li>
+</li>--%>
               <li class="sub-menu">
                 <a href="javascript:;">
                   <i class="fa fa-envelope"></i>
@@ -253,17 +252,6 @@
                   <li><a href="mail.html">Send Communication</a></li>
                   <li><a href="mail_compose.html">Email Settings</a></li>
                   <li><a href="mail_view.html">Sms Settings</a></li>
-                </ul>
-              </li>
-              <li class="sub-menu">
-                <a href="javascript:;">
-                  <i class="fa fa-bar-chart-o"></i>
-                  <span>Permissions</span>
-                </a>
-                <ul class="sub">
-                  <li><a href="morris.html">Add Permissions</a></li>
-                  <li><a href="chartjs.html">Special Permissions</a></li>
-             
                 </ul>
               </li>
             <li>
@@ -300,7 +288,10 @@
     <div class="mini-stat clearfix">
       <span class="mini-stat-icon orange"><i class="fa fa-gavel"></i></span>
       <div class="mini-stat-info">
-        <span>320</span>
+        <span>
+            <asp:Literal ID="txtAdmins" runat="server"></asp:Literal>
+
+        </span>
         Admins
       </div>
     </div>
@@ -309,7 +300,9 @@
     <div class="mini-stat clearfix">
       <span class="mini-stat-icon tar"><i class="fa fa-tag"></i></span>
       <div class="mini-stat-info">
-        <span>22,450</span>
+        <span>
+            <asp:Literal ID="txtPMS" runat="server"></asp:Literal>
+        </span>
         Project Managers
       </div>
     </div>
@@ -318,7 +311,10 @@
     <div class="mini-stat clearfix">
       <span class="mini-stat-icon pink"><i class="fa fa-money"></i></span>
       <div class="mini-stat-info">
-        <span>34,320</span>
+        <span>
+            <asp:Literal ID="txtMembers" runat="server"></asp:Literal>
+
+        </span>
         Members
       </div>
     </div>
@@ -327,8 +323,11 @@
     <div class="mini-stat clearfix">
       <span class="mini-stat-icon green"><i class="fa fa-eye"></i></span>
       <div class="mini-stat-info">
-        <span>32720</span>
-        Clients
+        <span>
+            <asp:Literal ID="txtProjects" runat="server"></asp:Literal>
+
+        </span>
+        Total Projects
       </div>
     </div>
   </div>
@@ -338,8 +337,11 @@
     <div class="mini-stat clearfix">
       <span class="mini-stat-icon orange"><i class="fa fa-gavel"></i></span>
       <div class="mini-stat-info">
-        <span>320</span>
-        Total Projects
+        <span>
+            <asp:Literal ID="txtTotalTasks" runat="server"></asp:Literal>
+
+        </span>
+        Total Tasks
       </div>
     </div>
   </div>
@@ -347,8 +349,11 @@
     <div class="mini-stat clearfix">
       <span class="mini-stat-icon tar"><i class="fa fa-tag"></i></span>
       <div class="mini-stat-info">
-        <span>22,450</span>
-        Pendings Tasks
+        <span>
+            <asp:Literal ID="txtAllocatedTasks" runat="server"></asp:Literal>
+
+        </span>
+        Allocated Tasks
       </div>
     </div>
   </div>
@@ -356,8 +361,11 @@
     <div class="mini-stat clearfix">
       <span class="mini-stat-icon pink"><i class="fa fa-money"></i></span>
       <div class="mini-stat-info">
-        <span>34,320</span>
-        Completed Tasks
+        <span>
+            <asp:Literal ID="txtPendingTasks" runat="server"></asp:Literal>
+
+        </span>
+        Pending Tasks
       </div>
     </div>
   </div>
@@ -365,7 +373,10 @@
     <div class="mini-stat clearfix">
       <span class="mini-stat-icon green"><i class="fa fa-eye"></i></span>
       <div class="mini-stat-info">
-        <span>32720</span>
+        <span>
+            <asp:Literal ID="txtCategory" runat="server"></asp:Literal>
+            
+        </span>
         Categories
       </div>
     </div>

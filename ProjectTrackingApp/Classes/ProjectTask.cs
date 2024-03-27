@@ -94,6 +94,23 @@ namespace ProjectTrackingApp.Classes
         #endregion
 
         #region "Methods"
+        public DataSet getMemberTasks(long TeamMemberId)
+        {
+            string str = "sp_getMemberTasks";
+            System.Data.Common.DbCommand cmd = db.GetStoredProcCommand(str);
+            db.AddInParameter(cmd, "@UserId", DbType.Int32, TeamMemberId);
+
+            DataSet ds = db.ExecuteDataSet(cmd);
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                return ds;
+
+            }
+            else
+            {
+                return null;
+            }
+        }
         public DataSet getAllTasks()
         {
             string str = "sp_getAllTasks";

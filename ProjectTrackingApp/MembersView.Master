@@ -193,7 +193,7 @@
                   <span>Tasks</span>
                 </a>
                 <ul class="sub">
-                    <li><a href="advanced_form.html">Daily Activity Log</a></li>
+                    <li><a href="../member/view-tasks-member">View Tasks</a></li>
          
                 </ul>
               </li>
@@ -219,17 +219,6 @@
                   <li><a href="mail_view.html">Sms Settings</a></li>
                 </ul>
               </li>
-              <li class="sub-menu">
-                <a href="javascript:;">
-                  <i class="fa fa-bar-chart-o"></i>
-                  <span>Permissions</span>
-                </a>
-                <ul class="sub">
-                  <li><a href="morris.html">Add Permissions</a></li>
-                  <li><a href="chartjs.html">Special Permissions</a></li>
-             
-                </ul>
-              </li>
             <li>
   <a href="login.html">
     <i class="fa fa-user"></i>
@@ -237,12 +226,6 @@
   </a>
 </li>
             
-              <li>
-                <a href="login.html">
-                  <i class="fa fa-user"></i>
-                  <span>Reporting</span>
-                </a>
-              </li>
                   <li>
     <a href="login.html">
       <i class="fa fa-user"></i>

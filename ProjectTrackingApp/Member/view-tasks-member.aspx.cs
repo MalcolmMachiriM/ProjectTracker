@@ -3,18 +3,16 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ProjectTrackingApp.Admin
+namespace ProjectTrackingApp.Member
 {
-    public partial class view_tasks : System.Web.UI.Page
+    public partial class view_tasks_member : System.Web.UI.Page
     {
         readonly ProjectTask tasks = new ProjectTask("con");
         QueryStringModule qn = new QueryStringModule();
-
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -22,29 +20,33 @@ namespace ProjectTrackingApp.Admin
                 getTasks();
             }
         }
-
         private void getTasks()
         {
-            long id = long.Parse(Session["userid"].ToString());
-            DataSet ds = tasks.getMemberTasks(id);
+            DataSet ds = tasks.getAllTasks();
             if (ds != null)
             {
                 grdTasks.DataSource = ds;
                 grdTasks.DataBind();
             }
         }
-
         protected void grdTasks_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             try
             {
 
                 int index;
+                if (e.CommandName == "editrecord")
+                {
+                    index = Convert.ToInt32(e.CommandArgument);
+                    string EcryptedID = HttpUtility.UrlEncode(qn.Encrypt(index.ToString()));
+                    //Response.Redirect("../Admin/edit-project?ID=" + EcryptedID + "");
+
+                }
                 if (e.CommandName == "assignrecord")
                 {
                     index = Convert.ToInt32(e.CommandArgument);
                     string EcryptedID = HttpUtility.UrlEncode(qn.Encrypt(index.ToString()));
-                    Response.Redirect("../Member/task-assign?ID=" + EcryptedID + "");
+                    Response.Redirect("../Member/activity-log?ID=" + EcryptedID + "");
 
                 }
                 if (e.CommandName == "deleterecord")
@@ -68,17 +70,16 @@ namespace ProjectTrackingApp.Admin
 
         protected void grdTasks_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            
+
             grdTasks.PageIndex = e.NewPageIndex;
 
             this.BindGrid(e.NewPageIndex);
-            
-            
+
+
         }
         private void BindGrid(int page = 0)
         {
-            long id = long.Parse(Session["userid"].ToString());
-            DataSet Projects = tasks.getMemberTasks(id);
+            DataSet Projects = tasks.getAllTasks();
             if (Projects != null)
             {
                 int maxPageIndex = grdTasks.PageCount - 1;

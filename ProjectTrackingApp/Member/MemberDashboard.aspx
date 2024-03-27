@@ -20,7 +20,7 @@
                         <div class="mini-stat clearfix">
                             <span class="mini-stat-icon pink"><i class="fa fa-money"></i></span>
                             <div class="mini-stat-info">
-                                <span><asp:Literal ID="txtCompletedTasks" runat="server"></asp:Literal></span>
+                                <span><asp:Literal ID="txtAllocatedTasks" runat="server"></asp:Literal></span>
                                 Completed Tasks
                             </div>
                         </div>

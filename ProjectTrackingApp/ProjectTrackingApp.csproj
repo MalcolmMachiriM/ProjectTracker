@@ -480,10 +480,14 @@
     <Content Include="js\tree.js" />
     <Content Include="js\validation-init.js" />
     <Content Include="login.aspx" />
+    <Content Include="Member\activity-log.aspx" />
     <Content Include="Member\MemberDashboard.aspx" />
+    <Content Include="Member\view-tasks-member.aspx" />
+    <Content Include="PM\document-add.aspx" />
     <Content Include="PM\PMDashboard.aspx" />
     <Content Include="PM\ProjectMembers.aspx" />
     <Content Include="PM\projects-enquiries.aspx" />
+    <Content Include="PM\view-documents.aspx" />
     <Content Include="PM\view-projects-pm.aspx" />
     <Content Include="RiskManagement\RiskModelling.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -665,6 +669,8 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Classes\ActivityLogs.cs" />
+    <Compile Include="Classes\Documents.cs" />
     <Compile Include="Classes\EncryptDecryptClass.cs" />
     <Compile Include="Classes\EvaluatedRisks.cs" />
     <Compile Include="Classes\LookUp.cs" />
@@ -718,12 +724,33 @@
     <Compile Include="MembersView.Master.designer.cs">
       <DependentUpon>MembersView.Master</DependentUpon>
     </Compile>
+    <Compile Include="Member\activity-log.aspx.cs">
+      <DependentUpon>activity-log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\activity-log.aspx.designer.cs">
+      <DependentUpon>activity-log.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Member\MemberDashboard.aspx.cs">
       <DependentUpon>MemberDashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Member\MemberDashboard.aspx.designer.cs">
       <DependentUpon>MemberDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\view-tasks-member.aspx.cs">
+      <DependentUpon>view-tasks-member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\view-tasks-member.aspx.designer.cs">
+      <DependentUpon>view-tasks-member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PM\document-add.aspx.cs">
+      <DependentUpon>document-add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PM\document-add.aspx.designer.cs">
+      <DependentUpon>document-add.aspx</DependentUpon>
     </Compile>
     <Compile Include="PM\PMDashboard.aspx.cs">
       <DependentUpon>PMDashboard.aspx</DependentUpon>
@@ -745,6 +772,13 @@
     </Compile>
     <Compile Include="PM\projects-enquiries.aspx.designer.cs">
       <DependentUpon>projects-enquiries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PM\view-documents.aspx.cs">
+      <DependentUpon>view-documents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PM\view-documents.aspx.designer.cs">
+      <DependentUpon>view-documents.aspx</DependentUpon>
     </Compile>
     <Compile Include="PM\view-projects-pm.aspx.cs">
       <DependentUpon>view-projects-pm.aspx</DependentUpon>

@@ -7,38 +7,38 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProjectTrackingApp.Member
+namespace ProjectTrackingApp.PM
 {
 
 
-    public partial class MemberDashboard
+    public partial class document_add
     {
 
         /// <summary>
-        /// txtPendingTasks control.
+        /// txtDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal txtPendingTasks;
+        protected global::System.Web.UI.WebControls.TextBox txtDescription;
 
         /// <summary>
-        /// txtAllocatedTasks control.
+        /// drpProjects control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal txtAllocatedTasks;
+        protected global::System.Web.UI.WebControls.DropDownList drpProjects;
 
         /// <summary>
-        /// txtResources control.
+        /// btnSave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal txtResources;
+        protected global::System.Web.UI.WebControls.Button btnSave;
     }
 }

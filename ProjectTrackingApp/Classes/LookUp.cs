@@ -141,7 +141,26 @@ namespace ProjectTrackingApp.Classes
 
         //}
 
+        public DataSet getStats()
+        {
+            string str = "sp_getDashStats";
+            System.Data.Common.DbCommand cmd = db.GetStoredProcCommand(str);
+            //db.AddInParameter(cmd, "@Criteria", DbType.Int32, Criteria);
+            //db.AddInParameter(cmd, "@RoleID", DbType.Int32, RoleID);
+            //db.AddInParameter(cmd, "@Value", DbType.String, Value);
+            DataSet ds = db.ExecuteDataSet(cmd);
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                return ds;
 
+            }
+            else
+            {
+                return null;
+            }
+
+
+        }
         public DataSet getSearchUsers(int Criteria, int RoleID, string Value)
         {
             string str = "sp_SearchUsers";
@@ -149,6 +168,26 @@ namespace ProjectTrackingApp.Classes
             db.AddInParameter(cmd, "@Criteria", DbType.Int32, Criteria);
             db.AddInParameter(cmd, "@RoleID", DbType.Int32, RoleID);
             db.AddInParameter(cmd, "@Value", DbType.String, Value);
+            DataSet ds = db.ExecuteDataSet(cmd);
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                return ds;
+
+            }
+            else
+            {
+                return null;
+            }
+
+
+        }
+        public DataSet getStatus()
+        {
+            string str = "sp_getStatus";
+            System.Data.Common.DbCommand cmd = db.GetStoredProcCommand(str);
+            //db.AddInParameter(cmd, "@Criteria", DbType.Int32, Criteria);
+            //db.AddInParameter(cmd, "@RoleID", DbType.Int32, RoleID);
+            //db.AddInParameter(cmd, "@Value", DbType.String, Value);
             DataSet ds = db.ExecuteDataSet(cmd);
             if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
             {

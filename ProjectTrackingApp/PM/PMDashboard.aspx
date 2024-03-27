@@ -26,7 +26,7 @@
                                 <span>
                                     <asp:Literal ID="txtPendingTasks" runat="server"></asp:Literal>
                                 </span>
-                                Pendings Tasks
+                                Allocated Tasks
                             </div>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
                             <span class="mini-stat-icon pink"><i class="fa fa-money"></i></span>
                             <div class="mini-stat-info">
                                 <span><asp:Literal ID="txtCompletedTasks" runat="server"></asp:Literal></span>
-                                Completed Tasks
+                                Total Tasks
                             </div>
                         </div>
                     </div>

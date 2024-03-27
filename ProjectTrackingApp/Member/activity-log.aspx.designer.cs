@@ -7,101 +7,92 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProjectTrackingApp
+namespace ProjectTrackingApp.Member
 {
 
 
-    public partial class ProjectDashboard
+    public partial class activity_log
     {
 
         /// <summary>
-        /// lblUsername control.
+        /// txtid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUsername;
+        protected global::System.Web.UI.WebControls.HiddenField txtid;
 
         /// <summary>
-        /// txtAdmins control.
+        /// txtProjectName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal txtAdmins;
+        protected global::System.Web.UI.WebControls.TextBox txtProjectName;
 
         /// <summary>
-        /// txtPMS control.
+        /// txtTaskName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal txtPMS;
+        protected global::System.Web.UI.WebControls.TextBox txtTaskName;
 
         /// <summary>
-        /// txtMembers control.
+        /// txtProjectManager control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal txtMembers;
+        protected global::System.Web.UI.WebControls.TextBox txtProjectManager;
 
         /// <summary>
-        /// txtProjects control.
+        /// txtStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal txtProjects;
+        protected global::System.Web.UI.WebControls.TextBox txtStatus;
 
         /// <summary>
-        /// txtTotalTasks control.
+        /// txtLog control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal txtTotalTasks;
+        protected global::System.Web.UI.WebControls.TextBox txtLog;
 
         /// <summary>
-        /// txtAllocatedTasks control.
+        /// drpStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal txtAllocatedTasks;
+        protected global::System.Web.UI.WebControls.DropDownList drpStatus;
 
         /// <summary>
-        /// txtPendingTasks control.
+        /// btnSave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal txtPendingTasks;
+        protected global::System.Web.UI.WebControls.Button btnSave;
 
         /// <summary>
-        /// txtCategory control.
+        /// grdActivityLog control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal txtCategory;
-
-        /// <summary>
-        /// ContentPlaceHolder1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.GridView grdActivityLog;
     }
 }
