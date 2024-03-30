@@ -91,6 +91,8 @@ namespace ProjectTrackingApp
                         Session["userid"] = su.UserDetails.Tables[0].Rows[0]["UserID"].ToString();
                         Session["username"] = su.UserDetails.Tables[0].Rows[0]["Email"].ToString();
                         Session["roleid"] = su.UserDetails.Tables[0].Rows[0]["RoleID"].ToString();
+                        Session["userfullname"] = su.UserDetails.Tables[0].Rows[0]["FirstName"].ToString() +
+                            su.UserDetails.Tables[0].Rows[0]["LastName"].ToString();
 
                         if (Session["roleid"].ToString() == "1")
                         {

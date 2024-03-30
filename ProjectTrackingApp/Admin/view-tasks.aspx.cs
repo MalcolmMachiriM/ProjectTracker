@@ -26,7 +26,7 @@ namespace ProjectTrackingApp.Admin
         private void getTasks()
         {
             long id = long.Parse(Session["userid"].ToString());
-            DataSet ds = tasks.getMemberTasks(id);
+            DataSet ds = tasks.getAllTasks();
             if (ds != null)
             {
                 grdTasks.DataSource = ds;
@@ -44,7 +44,7 @@ namespace ProjectTrackingApp.Admin
                 {
                     index = Convert.ToInt32(e.CommandArgument);
                     string EcryptedID = HttpUtility.UrlEncode(qn.Encrypt(index.ToString()));
-                    Response.Redirect("../Member/task-assign?ID=" + EcryptedID + "");
+                    Response.Redirect("../Admin/task-assign?ID=" + EcryptedID + "");
 
                 }
                 if (e.CommandName == "deleterecord")

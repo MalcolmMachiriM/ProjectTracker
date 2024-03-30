@@ -1,6 +1,7 @@
 ﻿using ProjectTrackingApp.Classes;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Web;
@@ -18,6 +19,29 @@ namespace ProjectTrackingApp.Admin
             {
                 
                 getRoles();
+                getProjects();
+            }
+        }
+
+        private void getProjects()
+        {
+            LookUp lp = new LookUp("con");
+            DataSet Projects = lp.getAllProjects();
+            if (Projects != null)
+            {
+                ListItem li = new ListItem("Select Project", "0");
+                drpProjects.DataSource = Projects;
+                drpProjects.DataValueField = "ID";
+                drpProjects.DataTextField = "ProjectName";
+                drpProjects.DataBind();
+                drpProjects.Items.Insert(0, li);
+            }
+            else
+            {
+                ListItem li = new ListItem("There are no defined projects", "0");
+                drpProjects.DataSource = null;
+                drpProjects.DataBind();
+                drpProjects.Items.Insert(0, li);
             }
         }
 
@@ -99,10 +123,28 @@ namespace ProjectTrackingApp.Admin
                 msgbox("Please select role");
                 return;
             }
-
             user.SaveClient(int.Parse(drpRole.SelectedValue), txtFirstName.Text, txtLastName.Text, txtEmail.Text, txtMobile.Text, "XC4G160UbpgbPhnnnYcKfw==");
             ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('User successfully created');window.location ='./view-user.aspx';", true);
             Clear();
+
+            //if (drpRole.SelectedValue == "4")
+            //{
+            //    ClientProjects cl = new ClientProjects("con");
+            //    cl.UserId = long.Parse(Session["userid"].ToString());
+            //    cl.ProjectId = long.Parse(drpProjects.SelectedValue);
+
+            //    if (cl.Save())
+            //    {
+            //        msgbox("Client project saved ");
+
+            //    }
+            //    else
+            //    {
+            //        msgbox("Client project failed to save ");
+            //    }
+            //}
+
+
         }
         public void msgbox(string strMessage)
         {
@@ -123,5 +165,12 @@ namespace ProjectTrackingApp.Admin
             
         }
 
+        protected void drpRole_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (drpRole.SelectedValue == "4")
+            {
+                pnlProject.Visible = true;
+            }
+        }
     }
 }

@@ -17,9 +17,10 @@ namespace ProjectTrackingApp.Classes
         protected long mID;
         protected long mProjectId;
         protected string mMsgFlg;
+        protected string mFileName;
         protected long mUserId;
         protected string mDescription;
-        protected byte mData;
+        protected byte[] mData;
         protected string mContentType;
         protected Database db;
         protected string mConnectionName;
@@ -53,7 +54,12 @@ namespace ProjectTrackingApp.Classes
             get { return mContentType; }
             set { mContentType = value; }
         }
-        public byte Data
+        public string FileName
+        {
+            get { return mFileName; }
+            set { mFileName = value; }
+        }
+        public byte[] Data
         {
             get { return mData; }
             set { mData = value; }
@@ -97,7 +103,7 @@ namespace ProjectTrackingApp.Classes
                 sqlCon.Close();
             }
         }
-        public DataSet getAllMembers()
+        public DataSet getAllDocuments()
         {
             string str = "sp_getDocuments";
             System.Data.Common.DbCommand cmd = db.GetStoredProcCommand(str);
@@ -178,7 +184,8 @@ namespace ProjectTrackingApp.Classes
             db.AddInParameter(cmd, "@Description", DbType.String, mDescription);
             db.AddInParameter(cmd, "@UserId", DbType.Int64, mUserId);
             db.AddInParameter(cmd, "@ContentType", DbType.String, mContentType);
-            db.AddInParameter(cmd, "@Data", DbType.Byte, mData);
+            db.AddInParameter(cmd, "@FileName", DbType.String, mFileName);
+            db.AddInParameter(cmd, "@Data", DbType.Binary, mData);
         }
         public virtual bool Save()
         {
@@ -237,6 +244,22 @@ namespace ProjectTrackingApp.Classes
         protected void SetErrorDetails(string str)
         {
             mMsgFlg = str;
+        }
+
+        internal void DeleteProject(long index)
+        {
+            string constr = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
+            SqlConnection sqlCon = null;
+            using (sqlCon = new SqlConnection(constr))
+            {
+                sqlCon.Open();
+                SqlCommand sql_cmnd = new SqlCommand("sp_DocDelete", sqlCon);
+                sql_cmnd.CommandType = CommandType.StoredProcedure;
+                sql_cmnd.Parameters.AddWithValue("@ID", SqlDbType.Int).Value = Id;
+
+                sql_cmnd.ExecuteNonQuery();
+                sqlCon.Close();
+            };
         }
         #endregion
     }

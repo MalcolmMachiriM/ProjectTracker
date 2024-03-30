@@ -237,12 +237,17 @@
                   <li><a href="mail_view.html">Sms Settings</a></li>
                 </ul>
               </li>
-            <li>
-  <a href="login.html">
-    <i class="fa fa-user"></i>
-    <span>Document Management</span>
-  </a>
-</li>
+                <li class="sub-menu">
+                <a href="javascript:;">
+                  <i class="fa fa-envelope"></i>
+                  <span>Documment Management</span>
+                </a>
+                <ul class="sub">
+                  <li><a href="../PM/document-add">Add Document</a></li>
+                  <li><a href="mail_compose.html">Email Settings</a></li>
+                  <li><a href="mail_view.html">Sms Settings</a></li>
+                </ul>
+              </li>
             
               <li>
                 <a href="login.html">

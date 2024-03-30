@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -32,8 +33,9 @@ namespace ProjectTrackingApp.PM
 
         private void getProjects()
         {
+            long id = long.Parse(Session["userid"].ToString());
             LookUp lp = new LookUp("con");
-            DataSet Projects = lp.getAllProjects();
+            DataSet Projects = lp.getAllProjects(id); ;
             if (Projects != null)
             {
                 ListItem li = new ListItem("Select Project", "0");
@@ -54,8 +56,35 @@ namespace ProjectTrackingApp.PM
 
         protected void btnSave_Click(object sender, EventArgs e)
         {
+            string filename = Path.GetFileName(flDocx.PostedFile.FileName);
+            string contentType = flDocx.PostedFile.ContentType;
             Documents dc = new Documents("con");
-            
+            using (Stream fs = flDocx.PostedFile.InputStream)
+            {
+                using (BinaryReader br = new BinaryReader(fs))
+                {
+                    byte[] bytes = br.ReadBytes((Int32)fs.Length);
+
+                    dc.Data = bytes;
+                    dc.ContentType = contentType;
+                    dc.Description = txtDescription.Text;
+                    dc.FileName = filename;
+                    dc.Id = 0;
+                    dc.ProjectId = long.Parse(drpProjects.SelectedValue);
+                    dc.UserId = long.Parse(Session["userid"].ToString());
+
+                    if (dc.Save())
+                    {
+                        msgbox("file saved");
+                    }
+                    else
+                    {
+                        msgbox("error in saving");
+                    }
+                }
+            }
+
+
         }
     }
 }

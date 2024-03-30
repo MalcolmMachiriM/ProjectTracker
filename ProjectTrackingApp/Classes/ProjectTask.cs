@@ -128,6 +128,23 @@ namespace ProjectTrackingApp.Classes
                 return null;
             }
         }
+        public DataSet getProjectTasks()
+        {
+            string str = "sp_getProjectTasks";
+            System.Data.Common.DbCommand cmd = db.GetStoredProcCommand(str);
+            //db.AddInParameter(cmd, "@AgentID", DbType.Int32, AgentID);
+
+            DataSet ds = db.ExecuteDataSet(cmd);
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                return ds;
+
+            }
+            else
+            {
+                return null;
+            }
+        }
         public DataSet getTask(long TaskId)
         {
             string str = "sp_getTask";

@@ -214,12 +214,12 @@
               </li>
        
                  
-              <%--<li>
-                <a href="fontawesome.html">
-                  <i class="fa fa-bullhorn"></i>
-                  <span>Clients </span>
-                </a>
-              </li>--%>
+              <li>
+  <a href="../Admin/view-clients">
+    <i class="fa fa-bullhorn"></i>
+    <span>Clients </span>
+  </a>
+</li>
              
               <li class="sub-menu">
                 <a href="javascript:;">
@@ -232,33 +232,35 @@
          
                 </ul>
               </li>
-              <%--  <li class="sub-menu">
+                <li class="sub-menu">
   <a href="javascript:;">
     <i class="fa fa-tasks"></i>
     <span>Resource Management</span>
   </a>
   <ul class="sub">
-    <li><a href="form_component.html">Resource Allocation Form</a></li>
-    <li><a href="advanced_form.html">Inventory Management Form</a></li>
+    <li><a href="../Admin/create-resource"> Create Resource </a></li>
+    <li><a href="../Admin/view-resources"> View Resources </a></li>
          
   </ul>
-</li>--%>
+</li>
               <li class="sub-menu">
                 <a href="javascript:;">
                   <i class="fa fa-envelope"></i>
                   <span>Communication</span>
                 </a>
                 <ul class="sub">
-                  <li><a href="mail.html">Send Communication</a></li>
-                  <li><a href="mail_compose.html">Email Settings</a></li>
-                  <li><a href="mail_view.html">Sms Settings</a></li>
+                  <li><a href="../Admin/admin-communication">Send Messages</a></li>
                 </ul>
               </li>
-            <li>
-  <a href="login.html">
-    <i class="fa fa-user"></i>
-    <span>Document Management</span>
+              <li class="sub-menu">
+  <a href="javascript:;">   
+    <i class="fa fa-envelope"></i>
+    <span>Documment Management</span>
   </a>
+  <ul class="sub">
+    <li><a href="../PM/document-add">Add Document</a></li>
+    <li><a href="../Admin/view-all-documents">View all documents</a></li>
+  </ul>
 </li>
             
               <li>

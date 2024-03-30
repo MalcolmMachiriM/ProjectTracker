@@ -49,7 +49,11 @@ namespace ProjectTrackingApp.Classes
 
         #region "Methods"
 
-
+        public DataSet GetFilePath(int id)
+        {
+            string str = "Select FilePath from EmailAttachments where BroadcastMessagesListID=" + id + ";";
+            return ReturnDs(str);
+        }
 
 
         #region "Constructors"
@@ -788,6 +792,23 @@ namespace ProjectTrackingApp.Classes
                 return null;
             }
         }
+        public DataSet getAllClients()
+        {
+            string str = "sp_getClients";
+            System.Data.Common.DbCommand cmd = db.GetStoredProcCommand(str);
+            //db.AddInParameter(cmd, "@AgentID", DbType.Int32, AgentID);
+
+            DataSet ds = db.ExecuteDataSet(cmd);
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                return ds;
+
+            }
+            else
+            {
+                return null;
+            }
+        }
         public DataSet getAllProjects()
         {
             string str = "sp_getAllProjects";
@@ -964,6 +985,22 @@ namespace ProjectTrackingApp.Classes
         {
 
             string str = "sp_getTeamMembers";
+            System.Data.Common.DbCommand cmd = db.GetStoredProcCommand(str);
+            DataSet ds = db.ExecuteDataSet(cmd);
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                return ds;
+
+            }
+            else
+            {
+                return null;
+            }
+        }
+        public DataSet getClients()
+        {
+
+            string str = "sp_getClientType";
             System.Data.Common.DbCommand cmd = db.GetStoredProcCommand(str);
             DataSet ds = db.ExecuteDataSet(cmd);
             if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
