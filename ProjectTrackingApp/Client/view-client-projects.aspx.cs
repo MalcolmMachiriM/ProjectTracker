@@ -39,7 +39,7 @@ namespace ProjectTrackingApp.Client
                 {
                     index = Convert.ToInt32(e.CommandArgument);
                     string EcryptedID = HttpUtility.UrlEncode(qn.Encrypt(index.ToString()));
-                    Response.Redirect("../Client/view-client-tasks?ID=" + EcryptedID + "");
+                    Response.Redirect("./view-client-tasks?ID=" + EcryptedID + "");
 
                 }
                 if (e.CommandName == "deleterecord")
@@ -48,7 +48,7 @@ namespace ProjectTrackingApp.Client
                     index = Convert.ToInt32(e.CommandArgument);
 
                     lp.DeleteProject(index);
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Project successfully deleted');window.location ='./view-client-projects.aspx';", true);
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Project successfully deleted');window.location ='./view-client-tasks.aspx';", true);
 
 
                 }

@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Net.NetworkInformation;
+using System.Threading.Tasks;
 using System.Web;
 using System.Xml.Linq;
 
@@ -20,6 +21,7 @@ namespace ProjectTrackingApp.Classes
         }
         protected DataSet mUserDetails;
         protected long mID;
+        protected double mPrice;
         protected long mProjectId;
         protected string mMsgFlg;
         protected string mName;
@@ -44,6 +46,11 @@ namespace ProjectTrackingApp.Classes
         {
             get { return mID; }
             set { mID = value; }
+        }
+        public double Price
+        {
+            get { return mPrice; }
+            set { mPrice = value; }
         }
         public int Status
         {
@@ -128,11 +135,11 @@ namespace ProjectTrackingApp.Classes
                 return null;
             }
         }
-        public DataSet getProjectTasks()
+        public DataSet getProjectTasks( long projectId)
         {
             string str = "sp_getProjectTasks";
             System.Data.Common.DbCommand cmd = db.GetStoredProcCommand(str);
-            //db.AddInParameter(cmd, "@AgentID", DbType.Int32, AgentID);
+            db.AddInParameter(cmd, "@ProjectId", DbType.Int64, projectId);
 
             DataSet ds = db.ExecuteDataSet(cmd);
             if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
@@ -211,6 +218,7 @@ namespace ProjectTrackingApp.Classes
             db.AddInParameter(cmd, "@StartDate", DbType.Date, mStartDate);
             db.AddInParameter(cmd, "@EndDate", DbType.Date, mEndDate);
             db.AddInParameter(cmd, "@Status", DbType.Int32, mStatus);
+            db.AddInParameter(cmd, "@Price", DbType.Double, mPrice);
         }
         public virtual bool Save()
         {
@@ -242,6 +250,30 @@ namespace ProjectTrackingApp.Classes
 
             }
 
+        }
+        public virtual bool UpdateStatus(long taskid, int status)
+        {
+            System.Data.Common.DbCommand cmd = db.GetStoredProcCommand("sp_update_taskStatus");
+            db.AddInParameter(cmd, "@ID", DbType.Int32, taskid);
+            db.AddInParameter(cmd, "@status", DbType.Int32, status);
+
+            try
+            {
+                DataSet ds = db.ExecuteDataSet(cmd);
+                if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                {
+                    mID = Convert.ToInt32(ds.Tables[0].Rows[0][0].ToString().ToString());
+
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                mMsgFlg = ex.Message;
+                return false; ;
+            }
         }
 
         #endregion
@@ -334,6 +366,23 @@ namespace ProjectTrackingApp.Classes
             string str = "sp_getTaskMembers";
             System.Data.Common.DbCommand cmd = db.GetStoredProcCommand(str);
             //db.AddInParameter(cmd, "@AgentID", DbType.Int32, AgentID);
+
+            DataSet ds = db.ExecuteDataSet(cmd);
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                return ds;
+
+            }
+            else
+            {
+                return null;
+            }
+        }
+        public DataSet getTaskMembers(long taskid)
+        {
+            string str = "sp_getTHeTaskMembers";
+            System.Data.Common.DbCommand cmd = db.GetStoredProcCommand(str);
+            db.AddInParameter(cmd, "@ID", DbType.Int32, taskid);
 
             DataSet ds = db.ExecuteDataSet(cmd);
             if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)

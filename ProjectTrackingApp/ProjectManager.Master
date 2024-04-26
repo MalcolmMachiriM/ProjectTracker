@@ -57,7 +57,7 @@
       <header class="header fixed-top clearfix">
         <!--logo start-->
         <div class="brand">
-          <a href="../Admin/dashboard" class="logo">
+          <a href="../PM/PMDashboard" class="logo">
             <%--<img src="../images/logo.png" alt="" />--%>
               <h4 style="color: white;">Project Tracker</h4>
 
@@ -170,17 +170,17 @@
           <div class="leftside-navigation">
             <ul class="sidebar-menu" id="nav-accordion">
               <li>
-                <a class="active" href="../Admin/dashboard">
+                <a class="active" href="../PM/PMDashboard">
                   <i class="fa fa-dashboard"></i>
                   <span>Dashboard</span>
                 </a>
               </li>
-              <li>
+              <%--<li>
                 <a class="active" href="../PM/ProjectMembers">
                   <i class="fa fa-dashboard"></i>
                   <span>Members</span>
                 </a>
-              </li>
+              </li>--%>
                   <li class="sub-menu">
                 <a href="javascript:;">
                   <i class="fa fa-th"></i>
@@ -197,8 +197,7 @@
                   <span>Risk Management</span>
                 </a>
                 <ul class="sub">
-                  <li><a href="general.html">Risk Assessment Form</a></li>
-                  <li><a href="buttons.html">Issue Tracking Form</a></li>
+                  <li><a href="../PM/pm-risk-projects">Projects</a></li>
 
                 </ul>
               </li>
@@ -221,8 +220,7 @@
     <span>Resource Management</span>
   </a>
   <ul class="sub">
-    <li><a href="form_component.html">Resource Allocation Form</a></li>
-    <li><a href="advanced_form.html">Inventory Management Form</a></li>
+    <li><a href="../Admin/view-resources"> View Resources </a></li>
          
   </ul>
 </li>
@@ -232,35 +230,32 @@
                   <span>Communication</span>
                 </a>
                 <ul class="sub">
-                  <li><a href="mail.html">Send Communication</a></li>
-                  <li><a href="mail_compose.html">Email Settings</a></li>
-                  <li><a href="mail_view.html">Sms Settings</a></li>
+                  <li><a href="../PM/pm-comms">Communication</a></li>
                 </ul>
               </li>
                 <li class="sub-menu">
                 <a href="javascript:;">
-                  <i class="fa fa-envelope"></i>
-                  <span>Documment Management</span>
+                  <i class="fa fa-file-text"></i>
+                  <span>Document Management</span>
                 </a>
                 <ul class="sub">
                   <li><a href="../PM/document-add">Add Document</a></li>
-                  <li><a href="mail_compose.html">Email Settings</a></li>
-                  <li><a href="mail_view.html">Sms Settings</a></li>
+                  <li><a href="../PM/view-documents">View Documents</a></li>
                 </ul>
               </li>
             
-              <li>
+             <%-- <li>
                 <a href="login.html">
                   <i class="fa fa-user"></i>
                   <span>Reporting</span>
                 </a>
-              </li>
-                  <li>
+              </li>--%>
+                  <%--<li>
     <a href="login.html">
       <i class="fa fa-user"></i>
       <span>Profile</span>
     </a>
-  </li>
+  </li>--%>
             </ul>
           </div>
           <!-- sidebar menu end-->

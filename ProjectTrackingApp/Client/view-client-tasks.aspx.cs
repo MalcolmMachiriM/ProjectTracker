@@ -17,13 +17,21 @@ namespace ProjectTrackingApp.Client
         {
             if (!IsPostBack)
             {
+                
+                if (Request.QueryString["ID"]!=null)
+                {
+                    projectId.Value = qn.Decrypt(HttpUtility.UrlDecode(Request.QueryString["ID"].ToString()));
+                }
+                else
+                {
+                    projectId.Value = "0";
+                }
                 getTasks();
             }
         }
         private void getTasks()
         {
-            long id = long.Parse(Session["userid"].ToString());
-            DataSet ds = tasks.getProjectTasks();
+            DataSet ds = tasks.getProjectTasks(long.Parse(projectId.Value));
             if (ds != null)
             {
                 grdTasks.DataSource = ds;

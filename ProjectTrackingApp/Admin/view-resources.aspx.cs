@@ -40,7 +40,7 @@ namespace ProjectTrackingApp.Admin
             {
                 index = Convert.ToInt32(e.CommandArgument);
                 string EcryptedID = HttpUtility.UrlEncode(qn.Encrypt(index.ToString()));
-                Response.Redirect("../Admin/assign-memnbers?ID=" + EcryptedID + "");
+                Response.Redirect("../Admin/allocate-resources?ID=" + EcryptedID + "");
 
             }
             if (e.CommandName == "deleterecord")

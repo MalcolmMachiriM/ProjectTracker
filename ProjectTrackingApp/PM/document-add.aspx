@@ -17,7 +17,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="txtDescription">Description Project</label>
+                                                <label for="txtDescription">Description of Document</label>
                                                 <asp:TextBox ID="txtDescription" runat="server" class="form-control" Style="color: black; font-weight: bold;"></asp:TextBox>
                                             </div>
                                         </div>
@@ -31,13 +31,15 @@
                                     <div class="row">
 
                                         <div class="form-group">
-                                            <label for="drpProjects">Select File</label>
+                                            
                                             <div class="col-md-6">
+                                                <label for="drpProjects">Select File</label>
                                                 <asp:FileUpload ID="flDocx" runat="server" CssClass="form-control" Style="color: black; font-weight: bold;" />
 
                                             </div>
                                         </div>
                                     </div>
+                                    <br />
                                     <div class="row">
 
                                     <div class="col-md-6">

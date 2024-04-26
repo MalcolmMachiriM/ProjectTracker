@@ -43,7 +43,7 @@ namespace ProjectTrackingApp.Admin
             if (e.CommandName == "assignrecord")
             {
                 string EcryptedID = HttpUtility.UrlEncode(qn.Encrypt(index.ToString()));
-                Response.Redirect("../Client/assign-client?ID=" + EcryptedID + "");
+                Response.Redirect("../Client/client-assign?ID=" + EcryptedID + "");
             }
         }
     }

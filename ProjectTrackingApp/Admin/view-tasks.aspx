@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ProjectMain.Master" AutoEventWireup="true" CodeBehind="view-tasks.aspx.cs" Inherits="ProjectTrackingApp.Admin.view_tasks" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ProjectManager.Master" AutoEventWireup="true" CodeBehind="view-tasks.aspx.cs" Inherits="ProjectTrackingApp.Admin.view_tasks" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section id="main-content" class="">

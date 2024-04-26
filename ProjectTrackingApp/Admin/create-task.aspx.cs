@@ -85,7 +85,8 @@ namespace ProjectTrackingApp.Admin
             task.Description = txtDescription.Text;
             task.StartDate = DateTime.Parse(txtStartDate.Text);
             task.EndDate = DateTime.Parse(txtEndDate.Text);
-            task.Status = (int)Statuses.Pending;
+            task.Status = (int)Statuses.Unassigned;
+            task.Price = double.Parse(txtPrice.Text);
             if (task.Save())
             {
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Task successfully created');window.location ='./view-tasks';", true);

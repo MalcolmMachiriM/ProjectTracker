@@ -10,17 +10,19 @@
                          View Tasks
                      </header>
                      <div class="panel-body">
+                         
                          <form runat="server">
+                             <asp:HiddenField ID="projectId" runat="server" />
                              <table style="width: 100%">
 
                                  <tr>
                                      <td colspan="12">
                                          <asp:GridView ID="grdTasks" ClientIDMode="Static" Width="100%" runat="server"
                                              AutoGenerateColumns="False" AutoGenerateSelectButton="false"
-                                             DataKeyNames="ID" OnPageIndexChanging="grdTasks_PageIndexChanging"
+                                             DataKeyNames="ID" 
                                              CssClass="table table-condensed" GridLines="None" role="grid" aria-describedby="DataTables_Table_0_info"
                                              Style="border-collapse: collapse !important"
-                                             AllowPaging="true" AllowSorting="True" OnRowCommand="grdTasks_RowCommand">
+                                             AllowPaging="true" AllowSorting="True" >
                                              <Columns>
 
                                                  <asp:BoundField DataField="ID" HeaderText="ID"></asp:BoundField>
@@ -34,14 +36,6 @@
                                                      <ItemTemplate>
                                                          <asp:LinkButton ID="btnAssign" runat="server" CssClass="btn btn-primary btn-icon btn-sm " CommandName="assignrecord" CommandArgument='<%#Eval("ID")%>'>
                                                  <i class="fa fa-share-square-o"></i>
-                                                         </asp:LinkButton>
-                                                     </ItemTemplate>
-                                                 </asp:TemplateField>
-                                                 <asp:TemplateField HeaderText="Discard">
-                                                     <ItemTemplate>
-
-                                                         <asp:LinkButton ID="btnReject" runat="server" CssClass="btn btn-danger btn-icon btn-sm" CommandName="deleterecord" OnClientClick="return confirm('Are you sure want you want to delete project?');" CommandArgument='<%#Eval("ID")%>'>
-                                                 <i class="fa fa-archive"></i>
                                                          </asp:LinkButton>
                                                      </ItemTemplate>
                                                  </asp:TemplateField>

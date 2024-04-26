@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static ProjectTrackingApp.Classes.ProjectTask;
 
 namespace ProjectTrackingApp.Admin
 {
@@ -81,7 +82,7 @@ namespace ProjectTrackingApp.Admin
 
         private void getTaskMembers()
         {
-            DataSet ds = mem.getAllMembers();
+            DataSet ds = mem.getTaskMembers(long.Parse(txtid.Value));
             if (ds!=null)
             {
                 grdMember.DataSource = ds;
@@ -110,10 +111,18 @@ namespace ProjectTrackingApp.Admin
                 mem.TaskId = long.Parse(txtid.Value);
                 if (mem.Save())
                 {
-                    //mem.Save(int.Parse(txtid.Value), int.Parse(drpTeamMember.SelectedValue), int.Parse(Session["userid"].ToString()));
-                    getTaskMembers();
-                    msgbox("Team Member successfully added to project");
-                    clear();
+                    if (task.UpdateStatus(long.Parse(txtid.Value),(int)Statuses.Pending))
+                    {
+                        getTaskMembers();
+                        msgbox("Team Member successfully added to project");
+                        clear();
+                    }
+                    else
+                    {
+                        msgbox("failed to update status");
+                    }
+                    
+                    
                 }
                 else
                 {
@@ -144,8 +153,16 @@ namespace ProjectTrackingApp.Admin
 
                     index = Convert.ToInt32(e.CommandArgument);
                     mem.RemoveMemberFromTask(index, int.Parse(txtid.Value));
-                    getTaskMembers();
+                    if (task.UpdateStatus(long.Parse(txtid.Value),(int)Statuses.Unassigned))
+                    {
+                    }
+                    else
+                    {
+                        msgbox("status failed to update");
+                    }
+
                     msgbox("Member successfully removed");
+                    getTaskMembers();
 
                 }
 

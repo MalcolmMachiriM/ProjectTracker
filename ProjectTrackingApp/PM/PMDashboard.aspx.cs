@@ -20,7 +20,7 @@ namespace ProjectTrackingApp.PM
             if (ds != null)
             {
                 txtMembers.Text = ds.Tables[5].Rows[0]["TM"].ToString();
-                txtCompletedTasks.Text = ds.Tables[7].Rows[0]["CompletedTasks"].ToString();
+                txtCompletedTasks.Text = ds.Tables[1].Rows[0]["TotalTasks"].ToString();
                 txtPendingTasks.Text = ds.Tables[2].Rows[0]["AllocatedTasks"].ToString();
                 txtProjects.Text = ds.Tables[0].Rows[0]["Projects"].ToString();
             }

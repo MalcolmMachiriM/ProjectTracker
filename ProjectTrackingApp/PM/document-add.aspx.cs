@@ -35,7 +35,7 @@ namespace ProjectTrackingApp.PM
         {
             long id = long.Parse(Session["userid"].ToString());
             LookUp lp = new LookUp("con");
-            DataSet Projects = lp.getAllProjects(id); ;
+            DataSet Projects = lp.getAllProjects(); ;
             if (Projects != null)
             {
                 ListItem li = new ListItem("Select Project", "0");
@@ -76,6 +76,8 @@ namespace ProjectTrackingApp.PM
                     if (dc.Save())
                     {
                         msgbox("file saved");
+                        Clear();
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Document successfully added');window.location ='./view-documents.aspx';", true);
                     }
                     else
                     {
@@ -85,6 +87,12 @@ namespace ProjectTrackingApp.PM
             }
 
 
+        }
+
+        private void Clear()
+        {
+            txtDescription.Text=string.Empty;
+            drpProjects.SelectedIndex = 0;
         }
     }
 }

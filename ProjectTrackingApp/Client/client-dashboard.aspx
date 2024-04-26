@@ -60,7 +60,7 @@
                                                     DataKeyNames="ID"
                                                     CssClass="table table-condensed" GridLines="None" role="grid" aria-describedby="DataTables_Table_0_info"
                                                     Style="border-collapse: collapse !important"
-                                                    AllowPaging="true" AllowSorting="True" OnRowCommand="grdMember_RowCommand">
+                                                    AllowPaging="true" AllowSorting="True" >
                                                     <Columns>
 
                                                         <asp:BoundField DataField="ID" HeaderText="ID" Visible="false"></asp:BoundField>

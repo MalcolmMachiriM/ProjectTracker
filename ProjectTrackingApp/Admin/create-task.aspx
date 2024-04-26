@@ -54,14 +54,14 @@
                                         </div>
                                     </div>
 
-                                    <%--<div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="drpRole">Role</label>
-                    <asp:DropDownList ID="drpRole" CssClass="form-control dropdown" runat="server" style="color: black; font-weight: bold;"></asp:DropDownList>
-                </div>
-            </div>
-        </div>--%>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="drpRole">Cost($)</label>
+                                                <asp:TextBox ID="txtPrice" runat="server"  class="form-control" Style="color: black; font-weight: bold;"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <div class="row">
                                         <div class="col-md-6">

@@ -19,17 +19,17 @@
                                         <td colspan="12">
                                             <asp:GridView ID="grdDocuments" ClientIDMode="Static" Width="100%" runat="server"
                                                 AutoGenerateColumns="False" AutoGenerateSelectButton="false"
-                                                DataKeyNames="ID" OnPageIndexChanging="grdDocuments_PageIndexChanging"
+                                                DataKeyNames="ID"
                                                 CssClass="table table-condensed" GridLines="None" role="grid" aria-describedby="DataTables_Table_0_info"
                                                 Style="border-collapse: collapse !important"
                                                 AllowPaging="true" AllowSorting="True" OnRowCommand="grdDocuments_RowCommand">
                                                 <Columns>
 
                                                     <asp:BoundField DataField="ID" HeaderText="ID"></asp:BoundField>
+                                                    <asp:BoundField DataField="FileName" HeaderText="File Name"></asp:BoundField>
                                                     <asp:BoundField DataField="ProjectName" HeaderText="Project Name"></asp:BoundField>
-                                                    <asp:BoundField DataField="Document" HeaderText="Document Name"></asp:BoundField>
-                                                    <asp:BoundField DataField="UplodedBy" HeaderText="Uploaded By"></asp:BoundField>
-                                                    <asp:BoundField DataField="DateAdded" HeaderText="Date Added"></asp:BoundField>
+                                                    <asp:BoundField DataField="Description" HeaderText="Description"></asp:BoundField>
+                                                    <asp:BoundField DataField="UploadedBy" HeaderText="Uploaded By"></asp:BoundField>
                                                     <asp:TemplateField HeaderText="Download">
                                                         <ItemTemplate>
                                                             <asp:LinkButton ID="btnDownload" runat="server" CssClass="btn btn-primary btn-icon btn-sm " CommandName="downloadrecord" CommandArgument='<%#Eval("ID")%>'>

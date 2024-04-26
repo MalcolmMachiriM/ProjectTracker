@@ -57,7 +57,7 @@
       <header class="header fixed-top clearfix">
         <!--logo start-->
         <div class="brand">
-          <a href="../Admin/dashboard" class="logo">
+          <a href="../Client/client-dashboard" class="logo">
             <%--<img src="../images/logo.png" alt="" />--%>
               <h4 style="color: white;">Project Tracker</h4>
 
@@ -170,7 +170,7 @@
           <div class="leftside-navigation">
             <ul class="sidebar-menu" id="nav-accordion">
               <li>
-                <a class="active" href="../Admin/dashboard">
+                <a class="active" href="../Client/client-dashboard">
                   <i class="fa fa-dashboard"></i>
                   <span>Dashboard</span>
                 </a>
@@ -197,28 +197,33 @@
          
   </ul>
 </li>--%>
+                <li>
+  <a class="active" href="../Client/client-dashboard">
+    <i class="fa fa-dashboard"></i>
+    <span>Financials</span>
+  </a>
+</li>
               <li class="sub-menu">
                 <a href="javascript:;">
                   <i class="fa fa-envelope"></i>
                   <span>Communication</span>
                 </a>
                 <ul class="sub">
-                  <li><a href="mail.html">Send Communication</a></li>
-                  <li><a href="mail_compose.html">Email Settings</a></li>
-                  <li><a href="mail_view.html">Sms Settings</a></li>
+                  <li><a href="../Client/client-communication">Send Communication</a></li>
                 </ul>
               </li>
-            <li>
+           <%-- <li>
   <a href="login.html">
-    <i class="fa fa-user"></i>
+                      <i class="fa fa-file-text"></i>
+
     <span>Document Management</span>
   </a>
-</li>
+</li>--%>
             
                   <li>
-    <a href="login.html">
-      <i class="fa fa-user"></i>
-      <span>Profile</span>
+    <a href="../Client/client-financials-enq">
+      <i class="fa fa-money"></i>
+      <span>Financials</span>
     </a>
   </li>
             </ul>

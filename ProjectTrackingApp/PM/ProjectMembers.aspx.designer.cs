@@ -15,12 +15,21 @@ namespace ProjectTrackingApp.PM
     {
 
         /// <summary>
-        /// grdTasks control.
+        /// txtid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdTasks;
+        protected global::System.Web.UI.WebControls.HiddenField txtid;
+
+        /// <summary>
+        /// grdMembers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView grdMembers;
     }
 }

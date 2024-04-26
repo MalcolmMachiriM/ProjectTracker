@@ -125,7 +125,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Admin\admin-add-document.aspx" />
     <Content Include="Admin\admin-communication.aspx" />
+    <Content Include="Admin\allocate-resources.aspx" />
     <Content Include="Admin\assign-memnbers.aspx" />
     <Content Include="Admin\create-project-category.aspx" />
     <Content Include="Admin\create-project.aspx" />
@@ -162,7 +164,11 @@
     <Content Include="cdnjs.cloudflare.com\ajax\libs\jquery-easing\1.3\jquery.easing.min.js" />
     <Content Include="cdnjs.cloudflare.com\ajax\libs\underscore.js\1.5.2\underscore-min.js" />
     <Content Include="Client\assign-client.aspx" />
+    <Content Include="Client\client-assign.aspx" />
+    <Content Include="Client\client-communication.aspx" />
     <Content Include="Client\client-dashboard.aspx" />
+    <Content Include="Client\client-financials-enq.aspx" />
+    <Content Include="Client\client-view-finance.aspx" />
     <Content Include="Client\view-client-projects.aspx" />
     <Content Include="Client\view-client-tasks.aspx" />
     <Content Include="Contact.aspx" />
@@ -199,6 +205,8 @@
     <Content Include="d3js.org\d3.v3.min.js" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="Financials\financials-enquiries.aspx" />
+    <Content Include="Financials\view-financials.aspx" />
     <Content Include="font-awesome\css\font-awesome.css" />
     <Content Include="font-awesome\fonts\fontawesome-webfontba72.svg" />
     <Content Include="forgot-password.aspx" />
@@ -490,9 +498,12 @@
     <Content Include="js\validation-init.js" />
     <Content Include="login.aspx" />
     <Content Include="Member\activity-log.aspx" />
+    <Content Include="Member\member-comms.aspx" />
     <Content Include="Member\MemberDashboard.aspx" />
     <Content Include="Member\view-tasks-member.aspx" />
     <Content Include="PM\document-add.aspx" />
+    <Content Include="PM\pm-comms.aspx" />
+    <Content Include="PM\pm-risk-projects.aspx" />
     <Content Include="PM\PMDashboard.aspx" />
     <Content Include="PM\ProjectMembers.aspx" />
     <Content Include="PM\projects-enquiries.aspx" />
@@ -579,12 +590,26 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\admin-add-document.aspx.cs">
+      <DependentUpon>admin-add-document.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\admin-add-document.aspx.designer.cs">
+      <DependentUpon>admin-add-document.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\admin-communication.aspx.cs">
       <DependentUpon>admin-communication.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\admin-communication.aspx.designer.cs">
       <DependentUpon>admin-communication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\allocate-resources.aspx.cs">
+      <DependentUpon>allocate-resources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\allocate-resources.aspx.designer.cs">
+      <DependentUpon>allocate-resources.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\assign-memnbers.aspx.cs">
       <DependentUpon>assign-memnbers.aspx</DependentUpon>
@@ -742,12 +767,40 @@
     <Compile Include="Client\assign-client.aspx.designer.cs">
       <DependentUpon>assign-client.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Client\client-assign.aspx.cs">
+      <DependentUpon>client-assign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\client-assign.aspx.designer.cs">
+      <DependentUpon>client-assign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\client-communication.aspx.cs">
+      <DependentUpon>client-communication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\client-communication.aspx.designer.cs">
+      <DependentUpon>client-communication.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Client\client-dashboard.aspx.cs">
       <DependentUpon>client-dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Client\client-dashboard.aspx.designer.cs">
       <DependentUpon>client-dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\client-financials-enq.aspx.cs">
+      <DependentUpon>client-financials-enq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\client-financials-enq.aspx.designer.cs">
+      <DependentUpon>client-financials-enq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client\client-view-finance.aspx.cs">
+      <DependentUpon>client-view-finance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\client-view-finance.aspx.designer.cs">
+      <DependentUpon>client-view-finance.aspx</DependentUpon>
     </Compile>
     <Compile Include="Client\view-client-projects.aspx.cs">
       <DependentUpon>view-client-projects.aspx</DependentUpon>
@@ -784,6 +837,20 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Financials\financials-enquiries.aspx.cs">
+      <DependentUpon>financials-enquiries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financials\financials-enquiries.aspx.designer.cs">
+      <DependentUpon>financials-enquiries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financials\view-financials.aspx.cs">
+      <DependentUpon>view-financials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financials\view-financials.aspx.designer.cs">
+      <DependentUpon>view-financials.aspx</DependentUpon>
+    </Compile>
     <Compile Include="forgot-password.aspx.cs">
       <DependentUpon>forgot-password.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -815,6 +882,13 @@
     <Compile Include="Member\activity-log.aspx.designer.cs">
       <DependentUpon>activity-log.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Member\member-comms.aspx.cs">
+      <DependentUpon>member-comms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\member-comms.aspx.designer.cs">
+      <DependentUpon>member-comms.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Member\MemberDashboard.aspx.cs">
       <DependentUpon>MemberDashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -835,6 +909,20 @@
     </Compile>
     <Compile Include="PM\document-add.aspx.designer.cs">
       <DependentUpon>document-add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PM\pm-comms.aspx.cs">
+      <DependentUpon>pm-comms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PM\pm-comms.aspx.designer.cs">
+      <DependentUpon>pm-comms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PM\pm-risk-projects.aspx.cs">
+      <DependentUpon>pm-risk-projects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PM\pm-risk-projects.aspx.designer.cs">
+      <DependentUpon>pm-risk-projects.aspx</DependentUpon>
     </Compile>
     <Compile Include="PM\PMDashboard.aspx.cs">
       <DependentUpon>PMDashboard.aspx</DependentUpon>

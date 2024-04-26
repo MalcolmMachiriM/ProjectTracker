@@ -29,18 +29,10 @@
                                                 <asp:BoundField DataField="EndDate" HeaderText="EndDate"></asp:BoundField>
                                                 <asp:BoundField DataField="ProjectManager" HeaderText="ProjectManager"></asp:BoundField>
                                                 <asp:BoundField DataField="ProjectStatus" HeaderText="ProjectStatus"></asp:BoundField>
-                                                <asp:TemplateField HeaderText="Modify">
+                                                <asp:TemplateField HeaderText="View">
                                                     <ItemTemplate>
                                                         <asp:LinkButton ID="btnEdit" runat="server" CssClass="btn btn-success btn-icon btn-sm " CommandName="viewrecord" CommandArgument='<%#Eval("ID")%>'>
                                                     <i class="fa fa-eye"></i>
-                                                        </asp:LinkButton>
-                                                    </ItemTemplate>
-                                                </asp:TemplateField>
-                                                <asp:TemplateField HeaderText="Discard">
-                                                    <ItemTemplate>
-
-                                                        <asp:LinkButton ID="btnReject" runat="server" CssClass="btn btn-danger btn-icon btn-sm" CommandName="deleterecord" OnClientClick="return confirm('Are you sure want you want to delete project?');" CommandArgument='<%#Eval("ID")%>'>
-                                                    <i class="fa fa-archive"></i>
                                                         </asp:LinkButton>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>

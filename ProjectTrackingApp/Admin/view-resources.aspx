@@ -7,7 +7,7 @@
              <div class="col-lg-12">
                  <section class="panel">
                      <header class="panel-heading">
-                         View Projects
+                         Resources
                      </header>
                      <div class="panel-body">
                          <form runat="server">
@@ -27,9 +27,11 @@
                                                  <asp:BoundField DataField="ProjectName" HeaderText="ProjectName"></asp:BoundField>
                                                  <asp:BoundField DataField="Name" HeaderText="Resource Name"></asp:BoundField>
                                                  <asp:BoundField DataField="Description" HeaderText="Resource Description"></asp:BoundField>
+                                                 
                                                  <asp:TemplateField HeaderText="Assign">
                                                      <ItemTemplate>
-                                                         <asp:LinkButton ID="btnAssign" runat="server" CssClass="btn btn-primary btn-icon btn-sm " CommandName="assignrecord" CommandArgument='<%#Eval("ID")%>'>
+
+                                                         <asp:LinkButton ID="btnAssign" runat="server" CssClass="btn btn-success btn-icon btn-sm" CommandName="assignrecord" CommandArgument='<%#Eval("ID")%>'>
                                                      <i class="fa fa-share-square-o"></i>
                                                          </asp:LinkButton>
                                                      </ItemTemplate>

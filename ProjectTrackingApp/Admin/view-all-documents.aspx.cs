@@ -1,6 +1,9 @@
 ﻿using ProjectTrackingApp.Classes;
 using System;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
+using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -50,12 +53,51 @@ namespace ProjectTrackingApp.Admin
             if (e.CommandName== "deleterecord")
             {
                 doc.DeleteProject(index);
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Project successfully deleted');window.location ='./view-projects.aspx';", true);
+                getDocx();
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Document successfully deleted');window.location ='./view-all-documents.aspx';", true);
+               
             }
             if (e.CommandName== "downloadrecord")
             {
-                doc.DeleteProject(index);
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Project successfully deleted');window.location ='./view-projects.aspx';", true);
+                byte[] bytes = null;
+                string fileName = null;
+                string contentType = null;
+                string constr = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
+                using (SqlConnection con = new SqlConnection(constr))
+                {
+                    using (SqlCommand cmd = new SqlCommand())
+                    {
+                        cmd.CommandText = "SELECT FileName, Data,ContentType FROM Documents";
+                        cmd.Connection = con;
+                        con.Open();
+                        using (SqlDataReader sdr = cmd.ExecuteReader())
+                        {
+                            sdr.Read();
+                            if ((sdr.HasRows))
+                            {
+                                bytes = (byte[])sdr["Data"];
+                                contentType = sdr["ContentType"].ToString();
+                                fileName = sdr["FileName"].ToString();
+                            }
+                            else
+                            {
+                                bytes = null;
+                                contentType = null;
+                                fileName = string.Empty;
+                            }
+
+                        }
+                        con.Close();
+                    }
+                    Response.Buffer = true;
+                    Response.Charset = "";
+                    Response.Cache.SetCacheability(HttpCacheability.NoCache);
+                    Response.ContentType = contentType;
+                    Response.AddHeader("content-disposition", "attachment;filename=\"" + fileName + "");
+                    Response.BinaryWrite(bytes);
+                    Response.Flush();
+                    Response.End();
+                }
             }
         }
     }

@@ -120,6 +120,23 @@ namespace ProjectTrackingApp.Classes
                 return null;
             }
         }
+        public DataSet getAllDocuments(long userid)
+        {
+            string str = "sp_getmyDocuments";
+            System.Data.Common.DbCommand cmd = db.GetStoredProcCommand(str);
+            db.AddInParameter(cmd, "@userid", DbType.Int32, userid);
+
+            DataSet ds = db.ExecuteDataSet(cmd);
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                return ds;
+
+            }
+            else
+            {
+                return null;
+            }
+        }
         public DataSet getTask(long TaskId)
         {
             string str = "sp_getDocument";
@@ -255,7 +272,7 @@ namespace ProjectTrackingApp.Classes
                 sqlCon.Open();
                 SqlCommand sql_cmnd = new SqlCommand("sp_DocDelete", sqlCon);
                 sql_cmnd.CommandType = CommandType.StoredProcedure;
-                sql_cmnd.Parameters.AddWithValue("@ID", SqlDbType.Int).Value = Id;
+                sql_cmnd.Parameters.AddWithValue("@ID", SqlDbType.Int).Value = index;
 
                 sql_cmnd.ExecuteNonQuery();
                 sqlCon.Close();

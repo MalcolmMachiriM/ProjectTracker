@@ -270,6 +270,30 @@ namespace ProjectTrackingApp.Classes
 
 
         }
+        public DataSet GetTeamMember(long ProjectId)
+        {
+
+            DataSet ds = null;
+
+            string str = "get_ProjectTeamMember";
+            System.Data.Common.DbCommand cmd = db.GetStoredProcCommand(str);
+            db.AddInParameter(cmd, "@ProjectID", DbType.Int64, ProjectId);
+            ds = db.ExecuteDataSet(cmd);
+
+
+
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                return ds;
+
+            }
+            else
+            {
+                return null;
+            }
+
+
+        }
 
         public bool IsProgramApplied(int ApplicantID, int CollegeID, int PeriodID, int ProgramID)
         {

@@ -205,8 +205,6 @@
                 </a>
                 <ul class="sub">
                   <li><a href="../RiskManagement/RiskModelling">Risk Modelling Form</a></li>
-                  <%--<li><a href="general.html">Risk Assessment Form</a></li>
-                  <li><a href="buttons.html">Issue Tracking Form</a></li>--%>
 
                 </ul>
               </li>
@@ -218,19 +216,6 @@
                   <span>Clients </span>
                 </a>
               </li>
-            
-              <%--<li class="sub-menu">
-                <a href="javascript:;">
-                  <i class="fa fa-tasks"></i>
-                  <span>Tasks</span>
-                </a>
-                <ul class="sub">
-                  <li><a href="../Admin/create-task">Create Task</a></li>
-                  <li><a href="../Admin/view-tasks">View Tasks</a></li>
-                    <li><a href="advanced_form.html">Daily Activity Log</a></li>
-         
-                </ul>
-              </li>--%>
                 <li class="sub-menu">
   <a href="javascript:;">
     <i class="fa fa-tasks"></i>
@@ -251,41 +236,30 @@
                   <li><a href="../Admin/admin-communication">Send Messages</a></li>
                 </ul>
               </li>
-              <li class="sub-menu">
-                <a href="javascript:;">
-                  <i class="fa fa-bar-chart-o"></i>
-                  <span>Permissions</span>
-                </a>
-                <ul class="sub">
-                  <li><a href="morris.html">Add Permissions</a></li>
-                  <li><a href="chartjs.html">Special Permissions</a></li>
-             
-                </ul>
-              </li>
             
                 <li class="sub-menu">
                 <a href="javascript:;">
-                  <i class="fa fa-envelope"></i>
+                  <i class="fa fa-file-text"></i>
                   <span>Documment Management</span>
                 </a>
                 <ul class="sub">
-                  <li><a href="../PM/document-add">Add Document</a></li>
+                  <li><a href="../Admin/admin-add-document">Add Document</a></li>
                   <li><a href="../Admin/view-all-documents">View all documents</a></li>
                 </ul>
               </li>
             
               <li>
-                <a href="login.html">
-                  <i class="fa fa-user"></i>
-                  <span>Reporting</span>
+                <a href="../Financials/financials-enquiries">
+                  <i class="fa fa-money"></i>
+                  <span>Financials</span>
                 </a>
               </li>
-                  <li>
+                 <%-- <li>
     <a href="login.html">
       <i class="fa fa-user"></i>
       <span>Profile</span>
     </a>
-  </li>
+  </li>--%>
             </ul>
           </div>
           <!-- sidebar menu end-->

@@ -37,21 +37,6 @@
                                                             </asp:LinkButton>
                                                         </ItemTemplate>
                                                     </asp:TemplateField>
-                                                    <%--<asp:TemplateField HeaderText="Assign">
-                                                        <ItemTemplate>
-                                                            <asp:LinkButton ID="btnAssign" runat="server" CssClass="btn btn-primary btn-icon btn-sm " CommandName="assignrecord" CommandArgument='<%#Eval("ID")%>'>
-                                                    <i class="fa fa-share-square-o"></i>
-                                                            </asp:LinkButton>
-                                                        </ItemTemplate>
-                                                    </asp:TemplateField>--%>
-                                                    <%--<asp:TemplateField HeaderText="Discard">
-                                                        <ItemTemplate>
-
-                                                            <asp:LinkButton ID="btnReject" runat="server" CssClass="btn btn-danger btn-icon btn-sm" CommandName="deleterecord" OnClientClick="return confirm('Are you sure want you want to delete project?');" CommandArgument='<%#Eval("ID")%>'>
-                                                    <i class="fa fa-archive"></i>
-                                                            </asp:LinkButton>
-                                                        </ItemTemplate>
-                                                    </asp:TemplateField>--%>
                                                 </Columns>
                                             </asp:GridView>
 

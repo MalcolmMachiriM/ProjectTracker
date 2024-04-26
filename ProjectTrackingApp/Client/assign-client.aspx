@@ -33,8 +33,8 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="drpProjects">Projects</label>
-                                                <asp:DropDownList ID="drpProjects" CssClass="form-control dropdown" runat="server" Style="color: black; font-weight: bold;"></asp:DropDownList>
+                                                <label for="txtEmail">Projects</label>
+                                                <asp:DropDownList ID="drpProjects" CssClass="form-control dropdown" runat="server" Enabled="true" Style="color: black; font-weight: bold;"></asp:DropDownList>
                                             </div>
                                         </div>
                                     </div>

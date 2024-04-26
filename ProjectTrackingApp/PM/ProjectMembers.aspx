@@ -11,11 +11,12 @@
                     </header>
                     <div class="panel-body">
                         <form runat="server">
+                            <asp:HiddenField ID="txtid" runat="server" />
                             <table style="width: 100%">
 
                                 <tr>
                                     <td colspan="12">
-                                        <asp:GridView ID="grdTasks" ClientIDMode="Static" Width="100%" runat="server"
+                                        <asp:GridView ID="grdMembers" ClientIDMode="Static" Width="100%" runat="server"
                                             AutoGenerateColumns="False" AutoGenerateSelectButton="false"
                                             DataKeyNames="ID" 
                                             CssClass="table table-condensed" GridLines="None" role="grid" aria-describedby="DataTables_Table_0_info"

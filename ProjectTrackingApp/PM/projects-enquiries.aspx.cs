@@ -77,7 +77,7 @@ namespace ProjectTrackingApp.PM
                 //EvaluatedRisks eve = new EvaluatedRisks("con");
                 index = Convert.ToInt32(e.CommandArgument);
                 string EcryptedID = HttpUtility.UrlEncode(qn.Encrypt(index.ToString()));
-                Response.Redirect("../PM/view-projects-pm?ID=" + EcryptedID + "");
+                Response.Redirect("../PM/ProjectMembers?ID=" + EcryptedID + "");
 
             }
         }

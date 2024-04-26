@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static ProjectTrackingApp.Classes.ProjectTask;
 
 namespace ProjectTrackingApp.Member
 {
@@ -105,9 +106,18 @@ namespace ProjectTrackingApp.Member
                 logs.ActivityId = long.Parse(txtid.Value);
                 if (logs.Save())
                 {
-                    clear();
-                    msgbox("Daily Log Added");
-                    getActivityLogs();
+                    
+                    if (task.UpdateStatus(long.Parse(txtid.Value), int.Parse(drpStatus.SelectedValue)))
+                    {
+                        msgbox("Task Status updated");
+                        msgbox("Daily Log Added");
+                        getActivityLogs();
+                        clear();
+                    }
+                    else
+                    {
+                        msgbox("failed to update status");
+                    }
 
                 }
                 else

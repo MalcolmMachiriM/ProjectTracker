@@ -57,7 +57,7 @@
       <header class="header fixed-top clearfix">
         <!--logo start-->
         <div class="brand">
-          <a href="../Admin/dashboard" class="logo">
+          <a href="../Member/MemberDashboard" class="logo">
             <%--<img src="../images/logo.png" alt="" />--%>
               <h4 style="color: white;">Project Tracker</h4>
 
@@ -170,12 +170,12 @@
           <div class="leftside-navigation">
             <ul class="sidebar-menu" id="nav-accordion">
               <li>
-                <a class="active" href="../Admin/dashboard">
+                <a class="active" href="../Member/MemberDashboard">
                   <i class="fa fa-dashboard"></i>
                   <span>Dashboard</span>
                 </a>
               </li>
-              <li class="sub-menu">
+            <%--  <li class="sub-menu">
                 <a href="javascript:;">
                   <i class="fa fa-book"></i>
                   <span>Risk Management</span>
@@ -185,7 +185,7 @@
                   <li><a href="buttons.html">Issue Tracking Form</a></li>
 
                 </ul>
-              </li>
+              </li>--%>
             
               <li class="sub-menu">
                 <a href="javascript:;">
@@ -197,7 +197,7 @@
          
                 </ul>
               </li>
-                <li class="sub-menu">
+               <%-- <li class="sub-menu">
   <a href="javascript:;">
     <i class="fa fa-tasks"></i>
     <span>Resource Management</span>
@@ -207,31 +207,29 @@
     <li><a href="advanced_form.html">Inventory Management Form</a></li>
          
   </ul>
-</li>
+</li>--%>
               <li class="sub-menu">
                 <a href="javascript:;">
                   <i class="fa fa-envelope"></i>
                   <span>Communication</span>
                 </a>
                 <ul class="sub">
-                  <li><a href="mail.html">Send Communication</a></li>
-                  <li><a href="mail_compose.html">Email Settings</a></li>
-                  <li><a href="mail_view.html">Sms Settings</a></li>
+                  <li><a href="../Member/member-comms">Communication</a></li>
                 </ul>
               </li>
-            <li>
+           <%-- <li>
   <a href="login.html">
     <i class="fa fa-user"></i>
     <span>Document Management</span>
   </a>
-</li>
+</li>--%>
             
-                  <li>
+                 <%-- <li>
     <a href="login.html">
       <i class="fa fa-user"></i>
       <span>Profile</span>
     </a>
-  </li>
+  </li>--%>
             </ul>
           </div>
           <!-- sidebar menu end-->
